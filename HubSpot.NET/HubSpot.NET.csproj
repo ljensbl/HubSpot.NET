@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net46;net451</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.5.1</Version>
+    <Version>0.6.17.2</Version>
     <Authors>Squared Up Ltd.</Authors>
     <Company>Squared Up Ltd.</Company>
     <Description>C# .NET Wrapper around the common HubSpot APIs.</Description>

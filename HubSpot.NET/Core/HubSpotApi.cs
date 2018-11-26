@@ -22,7 +22,7 @@ namespace HubSpot.NET.Core
         public IHubSpotCosFileApi File { get; }
         public IHubSpotOwnerApi Owner { get; }
         public IHubSpotCompanyPropertiesApi CompanyProperties { get; }
-
+        public HubSpotCompanyPropertyGroupsApi CompanyPropertyGroups { get; }
         public IHubSpotEmailSubscriptionsApi EmailSubscriptions { get; }
 
         public HubSpotApi(string apiKey)
@@ -36,6 +36,7 @@ namespace HubSpot.NET.Core
             File = new HubSpotCosFileApi(client);
             Owner = new HubSpotOwnerApi(client);
             CompanyProperties = new HubSpotCompaniesPropertiesApi(client);
+            CompanyPropertyGroups = new HubSpotCompanyPropertyGroupsApi(client);
             EmailSubscriptions = new HubSpotEmailSubscriptionsApi(client);
         }
 
