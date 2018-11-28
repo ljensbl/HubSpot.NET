@@ -23,6 +23,8 @@ namespace HubSpot.NET.Core
         public IHubSpotOwnerApi Owner { get; }
         public IHubSpotCompanyPropertiesApi CompanyProperties { get; }
         public HubSpotCompanyPropertyGroupsApi CompanyPropertyGroups { get; }
+        public HubSpotContactPropertiesApi ContactProperties { get; }
+        public HubSpotContactPropertyGroupsApi ContactPropertyGroups { get; }
         public IHubSpotEmailSubscriptionsApi EmailSubscriptions { get; }
 
         public HubSpotApi(string apiKey)
@@ -37,6 +39,8 @@ namespace HubSpot.NET.Core
             Owner = new HubSpotOwnerApi(client);
             CompanyProperties = new HubSpotCompaniesPropertiesApi(client);
             CompanyPropertyGroups = new HubSpotCompanyPropertyGroupsApi(client);
+            ContactProperties = new HubSpotContactPropertiesApi(client);
+            ContactPropertyGroups = new HubSpotContactPropertyGroupsApi(client);
             EmailSubscriptions = new HubSpotEmailSubscriptionsApi(client);
         }
 
