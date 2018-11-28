@@ -22,9 +22,9 @@ namespace HubSpot.NET.Core
         public IHubSpotCosFileApi File { get; }
         public IHubSpotOwnerApi Owner { get; }
         public IHubSpotCompanyPropertiesApi CompanyProperties { get; }
-        public HubSpotCompanyPropertyGroupsApi CompanyPropertyGroups { get; }
-        public HubSpotContactPropertiesApi ContactProperties { get; }
-        public HubSpotContactPropertyGroupsApi ContactPropertyGroups { get; }
+        public IHubSpotCompanyPropertyGroupsApi CompanyPropertyGroups { get; }
+        public IHubSpotContactPropertiesApi ContactProperties { get; }
+        public IHubSpotContactPropertyGroupsApi ContactPropertyGroups { get; }
         public IHubSpotEmailSubscriptionsApi EmailSubscriptions { get; }
 
         public HubSpotApi(string apiKey)
