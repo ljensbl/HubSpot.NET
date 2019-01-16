@@ -6,5 +6,6 @@ namespace HubSpot.NET.Core.Interfaces
     {
         PropertiesListHubSpotModel<ContactPropertyHubSpotModel> GetAll();
         ContactPropertyHubSpotModel Create(ContactPropertyHubSpotModel property);
+        ContactPropertyHubSpotModel Update(ContactPropertyHubSpotModel property);
     }
 }

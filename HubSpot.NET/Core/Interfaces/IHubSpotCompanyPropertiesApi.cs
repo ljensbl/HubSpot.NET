@@ -11,5 +11,6 @@ namespace HubSpot.NET.Core.Interfaces
     {
         PropertiesListHubSpotModel<CompanyPropertyHubSpotModel> GetAll();
         CompanyPropertyHubSpotModel Create(CompanyPropertyHubSpotModel property);
+        CompanyPropertyHubSpotModel Update(CompanyPropertyHubSpotModel property);
     }
 }

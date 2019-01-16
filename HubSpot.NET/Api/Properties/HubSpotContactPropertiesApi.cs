@@ -23,6 +23,12 @@ namespace HubSpot.NET.Api.Properties
 
             return _client.Execute<ContactPropertyHubSpotModel>(path, property, Method.POST, convertToPropertiesSchema: false);
         }
+        public ContactPropertyHubSpotModel Update(ContactPropertyHubSpotModel property)
+        {
+            var path = $"{new PropertiesListHubSpotModel<ContactPropertyHubSpotModel>().RouteBasePath}/named/{property.Name}";
+
+            return _client.Execute<ContactPropertyHubSpotModel>(path, property, Method.PUT, convertToPropertiesSchema: false);
+        }
         public PropertiesListHubSpotModel<ContactPropertyHubSpotModel> GetAll()
         {
             var path = $"{new PropertiesListHubSpotModel<ContactPropertyHubSpotModel>().RouteBasePath}";
